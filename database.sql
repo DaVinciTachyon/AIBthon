@@ -17,15 +17,15 @@ CREATE TABLE deals(
   description VARCHAR(1000)
 );
 
-INSERT INTO codes(code, item_id) VALUES ("HELLO WORLD MAN", 1);
-INSERT INTO codes(code, item_id) VALUES ("HELP BOTTLE CHIP", 2);
-INSERT INTO codes(code, item_id) VALUES ("BLUE BUILDING FOOTBALL", 3);
-INSERT INTO codes(code, item_id) VALUES ("NO CHICKEN RUGBY", 4);
+INSERT INTO codes(code, item_id) VALUES ("hello world man", 1);
+INSERT INTO codes(code, item_id) VALUES ("help bottle chip", 2);
+INSERT INTO codes(code, item_id) VALUES ("blue building football", 3);
+INSERT INTO codes(code, item_id) VALUES ("no chicken rugby", 4);
 
 
 INSERT INTO deals(item, price, location, description) VALUES ("groceries", 20, "Spar, Grand Canal Dock","Coupon to buy groceries at the local spar");
 INSERT INTO deals(item, price, website, location, description) VALUES ("english training", 40, "englishtraining.com", "Grafton Street English facility","Coupon to attend english courses");
 INSERT INTO deals(item, price, location, description) VALUES ("barber", 10, "Any grafton barber","Coupon for one session at the barber");
-INSERT INTO deals(item, price, location, description) VALUES ("hostal", 15, "Liffey river hostal","Coupon to stay one night at the liffey river hostal");
+INSERT INTO deals(item, price, location, description) VALUES ("hostel", 15, "Liffey river hostel","Coupon to stay one night at the liffey river hostel");
 
 ALTER TABLE codes ADD isAvailable tinyint(1) DEFAULT 1;
